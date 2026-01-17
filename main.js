@@ -1,4 +1,4 @@
-import join from 'https://esm.sh/psjoin@1.0.0'
+import join from 'https://esm.sh/psjoin@2.0.1'
 import {encodeHex} from 'https://esm.sh/jsr/@std/encoding@1.0.5/hex.js'
 import {equals} from 'https://esm.sh/jsr/@std/bytes@1.0.2/equals.js'
 import {
