@@ -1,5 +1,4 @@
 import join from 'https://esm.sh/psjoin@2.0.1'
-import {encodeHex} from 'https://esm.sh/jsr/@std/encoding@1.0.5/hex.js'
 import {equals} from 'https://esm.sh/jsr/@std/bytes@1.0.2/equals.js'
 import {
 	pubKeyCredParams,
@@ -84,8 +83,8 @@ function serverWebauthnCreate() {
 			},
 			user: {
 				id: userId,
-				name: `demo-${encodeHex(userId).slice(-8)}`,
-				displayName: `demo-${encodeHex(userId).slice(-8)}`,
+				name: `demo-${userId.toHex().slice(-8)}`,
+				displayName: `demo-${userId.toHex().slice(-8)}`,
 			},
 		}),
 	)
