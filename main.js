@@ -10,13 +10,13 @@ import {
 	assertionFromJSON,
 	attestationToJSON,
 	attestationFromJSON,
-} from 'https://esm.sh/gh/tjconcept/webauthn-json@1.1.0'
+} from 'https://esm.sh/gh/tjconcept/webauthn-json@1.2.0'
 import {
 	importKey,
 	verifySignature,
 	getChallenge,
 	parseAuthenticatorData,
-} from 'https://esm.sh/gh/tjconcept/webauthn-tools@1.0.0'
+} from 'https://esm.sh/gh/tjconcept/webauthn-tools@1.1.0'
 
 // As this demo runs the *server part* in a browser too, the recommended -8
 // algorithm is not used as it still lacks support in browsers. However, it is
